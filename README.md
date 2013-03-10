@@ -5,12 +5,12 @@ With Grabr you can easily browse and download photos from all your social media 
 
 ## Authors
 
-** Mihai Nicolae **
+**Mihai Nicolae**
 
-** Adir Krafman **
+**Adir Krafman**
 
-** Alan Fang **
+**Alan Fang**
 
-** Allison McPhail **
+**Allison McPhail**
 
-** Leon Chan **
+**Leon Chan**
