@@ -14,3 +14,7 @@ With Grabr you can easily browse and download photos from all your social media 
 **Allison McPhail**
 
 **Leon Chan**
+
+## Links
+
+[Getting Started: Building a Chrome Extension](https://developer.chrome.com/extensions/getstarted.html)
