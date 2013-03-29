@@ -1,13 +1,17 @@
 .logo_container {
-	text-align: center
+	text-align: center;
 }
 
 .logo_text {
-	font-family: Serif
+	font-family: Serif;
 }
 
 .login_area {
-	text-align: center	
+	text-align: center;	
+}
+
+.user-photo {
+
 }
 
 .img_polaroid {
@@ -15,11 +19,11 @@
 }
 
 #username_field {
-	visibility: hidden
+	display: none;
 }
 
 #password_field {
-	visibility: hidden;
+	display: none;
 }
 
 #login_button {
