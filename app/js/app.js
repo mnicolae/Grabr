@@ -1,8 +1,9 @@
 $(document).ready(function() {
 	
-	$(".img-polaroid").hover(function() {
-
-	});
+	$(".img-polaroid").hover(
+		function() { $(this).css("width", "100"); $(this).css("height", "100"); },
+		function() { $(this).css("width", "60"); $(this).css("height", "60");}
+	);
 
 	$(".img-polaroid").click(function() { 
 		$('input#username_field').show();
