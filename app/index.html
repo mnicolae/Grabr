@@ -29,16 +29,20 @@
     <div id="myTabContent" class="tab-content">
       <div class="tab-pane fade in active" id="home">
         <div class="hero-unit">
-          <div style="text-align:center">
-            <h1> GrabR </h1>
-            
+          
+          <div class="logo_container">
+              <!-- add logo image here -->
+              <h1 class="logo_text"> GrabR </h1>
+          </div>
+
+          <div class="login_area">  
             <img src="./img/user_profile/user_1.jpg" class="img-polaroid" width="60"height="60" /> 
             <img src="./img/user_profile/user_2.jpg" class="img-polaroid" width="60"height="60" />
                 
             <form class="navbar-form">
-              <div><input type="text" class="span2"></div>
-              <div><input type="password" class="span2"></div>
-              <button type="submit" class="btn">Log In</button>
+              <div><input id="username_field" type="text" class="span2"></div>
+              <div><input id="password_field" type="password" class="span2" display="none"></div>
+              <button id="login_button" type="submit" class="btn">Log In</button>
             </form>
           </div>
 

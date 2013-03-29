@@ -1,0 +1,27 @@
+.logo_container {
+	text-align: center
+}
+
+.logo_text {
+	font-family: Serif
+}
+
+.login_area {
+	text-align: center	
+}
+
+.img_polaroid {
+
+}
+
+#username_field {
+	visibility: hidden
+}
+
+#password_field {
+	visibility: hidden;
+}
+
+#login_button {
+	display: none;
+}
