@@ -11,11 +11,15 @@
 }
 
 .user-photo {
-
+text-align: center;
 }
 
 .img_polaroid {
 
+}
+
+.add_new_user_area{
+	text-align: right;
 }
 
 #username_field {
@@ -31,3 +35,11 @@
 	display: none;
 	margin-top: 10px;
 }
+
+#forgot {
+	display:none;
+	font-size: small;
+
+}
+
+
