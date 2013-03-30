@@ -22,6 +22,31 @@ text-align: center;
 	text-align: right;
 }
 
+.signup{
+	margin: 0 auto;
+	width:550px;
+}
+
+/*ROUNDABOUT STUFF*/
+
+   .roundabout-holder {
+   		text-align: center;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      height: 600px;
+      width: 600px;
+   }
+   .roundabout-moveable-item {
+      height: 450px;
+      width: 450px;
+      cursor: pointer;
+      background-color: #ccc;
+      border: 1px solid #999;
+   }
+   .roundabout-in-focus {
+      cursor: auto;
+   }
 #username_field {
 	margin-top: 10px;
 	display: none;
@@ -42,4 +67,6 @@ text-align: center;
 
 }
 
-
+#signup2 {
+	display: none;
+}

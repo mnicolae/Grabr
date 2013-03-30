@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+	$('.jumpup').addClass('animated bounceInDown');
+
 	var selected = false;
 	
 	$(".img-polaroid").hover( 
@@ -40,6 +42,16 @@ $(document).ready(function() {
 		$('#username_field').show();
 		$('#password_field').show();
 		$('button#login_button').show(); $('#forgot').show();
+	});
+
+
+	$("#reg1").click(function(){
+			$('#signup1').addClass('animated bounceOutDown');
+			setInterval(function(){$('#signup1').hide();$('#signup2').show()},500);
+			$('#signup2').addClass('animated bounceInDown');
+
+
+
 	});
 
 });
