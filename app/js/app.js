@@ -46,12 +46,46 @@ $(document).ready(function() {
 
 
 	$("#reg1").click(function(){
-			$('#signup1').addClass('animated bounceOutDown');
-			setInterval(function(){$('#signup1').hide();$('#signup2').show()},500);
-			$('#signup2').addClass('animated bounceInDown');
-
-
-
+			$('#signup1').addClass('animated bounceOutRight');
+			setTimeout(function(){
+				$('#signup1').hide();
+				$('#signup2').show();
+				$('#signup1').removeClass('animated bounceOutRight');
+				$('#signup2').addClass('animated bounceInLeft');
+			},500);
+			
 	});
 
+	$("#reg2b").click(function(){
+			$('#signup2').addClass('animated bounceOutLeft');
+			setTimeout(function(){
+				$('#signup2').hide();
+				$('#signup1').show()
+				$('#signup2').removeClass('animated bounceOutLeft');
+				$('#signup1').addClass('animated bounceInRight');
+			},500);
+			
+	});
+
+	$("#reg2f").click(function(){
+			$('#signup2').addClass('animated bounceOutRight');
+			setTimeout(function(){
+				$('#signup2').hide();
+				$('#signup3').show();
+				$('#signup2').removeClass('animated bounceOutRight');
+				$('#signup3').addClass('animated bounceInLeft');
+			},500);
+			
+	});
+
+	$("#reg3b").click(function(){
+			$('#signup3').addClass('animated bounceOutLeft');
+			setTimeout(function(){
+				$('#signup3').hide();
+				$('#signup2').show()
+				$('#signup3').removeClass('animated bounceOutLeft');
+				$('#signup2').addClass('animated bounceInRight');
+			},500);
+			
+	});
 });
