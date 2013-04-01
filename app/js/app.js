@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+	$(".dropdown-toggle").dropdown();
+	
 	$('.jumpup').addClass('animated bounceInDown');
 
 	var selected = false;
@@ -89,5 +91,4 @@ $(document).ready(function() {
 			
 	});
 
-	$(".dropdown-toggle").dropdown();
 });
