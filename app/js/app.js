@@ -88,4 +88,6 @@ $(document).ready(function() {
 			},500);
 			
 	});
+
+	$(".dropdown-toggle").dropdown();
 });
