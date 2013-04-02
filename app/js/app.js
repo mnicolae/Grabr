@@ -110,16 +110,52 @@ $(document).ready(function() {
 		var pic = $(this).prev().attr("src")
 		if (!pop){
 		$("#status").popover("show");
-		$(".popover-content").html('<img class="status-image" src=' + pic + '/>');
+		$(".popover-content").html('<div class="statusbox"> <img class="status-image" src=' + pic + '/> </div></br>');
 		pop = true;
 		}else{
-			$(".popover-content").append('<img class="status-image" src=' + pic + '/>');
-
-
-
+			$(".popover-content").append('<div class="statusbox"> <img class="status-image" src=' + pic + '/> </div></br>');
 		}
 
 	});
+
+	function loadbar(){
+
+	var progress = setInterval(function() {
+    var $bar = $('.bar');
+    
+    if ($bar.width()=="100%") {
+        clearInterval(progress);
+        $('.progress').removeClass('active');
+    } else {
+        $bar.width($bar.width() * 2);
+    }
+		}, 800);
+
+		// var n = 4
+		// while (n < 100){
+		// 	setInterval(function(){
+  //        		n = n + 6;
+  //        		var x = n + "%";
+		// 		$(".bar").css("width", x);
+		// 	},30);
+		// }
+	}
+
+
+	$("#download").click(function() {
+		$(".status-image").css('float', 'left');
+		$(".statusbox").append('<div class=" dbar progress progress-striped active"><div class="bar" style="width: 4%;"></div></div>');
+		loadbar();
+	});
+
+
+	// function newstatus(simage){
+	// 	var statusbox = document.createElement('div');
+	// 	$(statusbox).addClass("status-box");
+	// 	$statusbox).append(simage)
+
+
+	// }
 
 
 });

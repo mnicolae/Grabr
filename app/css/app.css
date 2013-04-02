@@ -66,11 +66,20 @@ text-align: center;
 .photo_container { position: relative; width: 100px; height: 100px; display: inline-block}
 .checkbox { position: absolute; bottom: 0px; right: 0px; }
 
+.statusbox{
+   width: 300px;
+
+
+}
 .status-image{
    width: 25px;
    height: 25px;
 
+}
 
+.dbar{
+   height: 20px;
+   width: 200px;
 }
 
 
