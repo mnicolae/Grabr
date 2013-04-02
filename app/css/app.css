@@ -1,3 +1,15 @@
+.user_name {
+   text-align: center;
+}
+
+.user_text_browse {
+   text-align: center;
+}
+
+#check3 {
+   text-align: center;
+}
+
 .logo_container {
 	text-align: center;
 }
@@ -50,7 +62,7 @@ text-align: center;
    }
 
 /*Checkbox stuff*/
-
+.photo_container_browse {position: relative; display: inline-block}
 .photo_container { position: relative; width: 100px; height: 100px; display: inline-block}
 .checkbox { position: absolute; bottom: 0px; right: 0px; }
 
