@@ -1,5 +1,10 @@
 $(document).ready(function() {
 
+	$("#sendPassword").click(function() {
+		$("#modalBodyContent").hide();
+		$(".modal-body").text("A password has been sent to your email.");
+	});
+
 	$(".dropdown-toggle").dropdown();
 	
 	$('.jumpup').addClass('animated bounceInDown');

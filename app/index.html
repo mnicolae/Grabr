@@ -53,20 +53,39 @@
               <a href="./main.html">
                   <button id="login_button" type="submit" class="btn">Log In</button>
               </a>
-              <a id="forgot" href="#"> forgot your password? </a>
-            <!-- </form> -->
-
+              
+            <!-- Button to trigger modal -->
+            <a id="forgot" href="#myModal" 
+            onclick="$('#myModal').modal({
+                backdrop: false
+            })">
+             forgot your password? </a>     
+            <!-- Modal -->
+            <div id="myModal" 
+            class="modal hide fade in" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false">
+                <div class="modal-header">
+                    <button class="close" aria-hidden="true" data-dismiss="modal" type="button">X</button>
+                    <h3 id="myModalLabel">Send password via email</h3>
+                </div>
+                <div class="modal-body">
+                    <div id="modalBodyContent" class="divDialogElements">
+                        Email <input type="text" name="xlInput" id="xlInput" class="xlarge">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+                    <button id="sendPassword" class="btn btn-primary">Send password</button>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
           </div>
             </br></br></br>
           <div class="add_new_user_area">
             <i class="icon-plus-sign"></i>
             <a href="./newuser.html"> <button  id="add_new_user_button" type="submit" class="btn btn-primary">Add new user</button> </a>
           </div>
-
-        </div>
-      </div>
-    </div>
-    
     <footer>
       <p>&copy; Ninja Engineers 2013. </p>
     </footer>
