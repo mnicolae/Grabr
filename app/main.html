@@ -8,7 +8,7 @@
       -
       - [1]: http://developer.chrome.com/extensions/contentSecurityPolicy.html
     -->
-        <!-- JQuery -->
+    <!-- JQuery -->
     <script src="http://code.jquery.com/jquery-1.9.1.min.js" type="text/javascript"></script>
     
     <!-- Bootstrap -->
@@ -23,247 +23,244 @@
     <link rel="stylesheet" href="./css/app.css">
     <link rel="stylesheet" href="./css/animate.css">
 
-  
-</head>
-<body>
+
+  </head>
+  <body>
     <!-- first navbar -->
     <div class="navbar">
       <div class="navbar-inner">
-          <a class="brand" href="#">Grabr</a>
-          <ul class="nav">
-              <li class="active"><a href="#main" data-toggle="tab">Feed</a></li>
-              <li class="divider-vertical"></li>
-              <li><a href="#browse" data-toggle="tab" onclick="$('#browse').load('browse.html');">Browse</a></li>
-              <li>    
-                  <form class="navbar-search pull-left">
-                    <input type="text" class="span2 search-query" placeholder="Search">
-                  </form>
+        <a class="brand" href="#">Grabr</a>
+        <ul class="nav">
+          <li class="active"><a href="#main" data-toggle="tab">Feed</a></li>
+          <li class="divider-vertical"></li>
+          <li><a href="#browse" data-toggle="tab" onclick="$('#browse').load('browse.html');">Browse</a></li>
+          <li>    
+            <form class="navbar-search pull-left">
+              <input type="text" class="span2 search-query" placeholder="Search">
+            </form>
+          </li>
+          <li class="dropdown">
+            <a data-toggle="dropdown" class="dropdown-toggle" href="#">Status<b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Download all</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a data-toggle="dropdown" class="dropdown-toggle" href="#">Download<b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Download all</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a data-toggle="dropdown" class="dropdown-toggle" href="#">My Account<b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="#settings" onclick="$('#settings').modal({backdrop: false})">Account settings</a>
               </li>
-              <li class="dropdown">
-                  <a data-toggle="dropdown" class="dropdown-toggle" href="#">Status<b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                    <li><a href="#">Download all</a></li>
-                </ul>
+              <li>
+                <a href="./index.html">Log out</a>
               </li>
-              <li class="dropdown">
-                  <a data-toggle="dropdown" class="dropdown-toggle" href="#">Download<b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                    <li><a href="#">Download all</a></li>
-                </ul>
-              </li>
-              <li class="dropdown">
-                  <a data-toggle="dropdown" class="dropdown-toggle" href="#">My Account<b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                    <li>
-                        <a href="#settings" onclick="$('#settings').modal({backdrop: false})">Account settings</a>
-                      </li>
-                    <li>
-                        <a href="./index.html">Log out</a>
-                    </li>
-                </ul>
-              </li>
+            </ul>
+          </li>
 
-          </ul>
+        </ul>
       </div>
     </div>
     
     <!-- second navbar -->
     <div class="navbar">
-        <div class="navbar-inner">
+      <div class="navbar-inner">
 
-        </div>
-    
-  <!-- container -->
-  <div class="container">
-    <div id="myTabContent" class="tab-content">
-      <div class="tab-pane fade in active" id="main">
-        <div class="hero-unit">
+      </div>
 
-          <div class="accordion" id="accordion2">
+      <!-- container -->
+      <div class="container">
+        <div id="myTabContent" class="tab-content">
+          <div class="tab-pane fade in active" id="main">
+            <div class="hero-unit">
 
-
-            <div class="accordion-group">
-              <div class="accordion-heading">
-                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
-                  <img src="./img/logo_facebook.png"  width="30" height="30" />  Facebook 
-                </a>
-              </div>
-              <div id="collapseOne" class="accordion-body collapse in">
-                <div class="accordion-inner">
-
-                    <!-- FB INNER STAR -->
-
-          <div class="feed jumpup">
-              <h4> 
-                <a href="https://www.facebook.com/dani.bwr">
-                Jake Bollen 
-                </a>
-                posted 5 new photos in the album 
-                <a href="https://www.facebook.com/media/set/?set=a.124622230945504.24779.100001931840711">
-                London & around
-                </a>
-              </h4>
-              <img src="./img/albums/Jake/London/1.jpg" class="img-polaroid feed-photo"  width="100" height="100" />
-              <img src="./img/albums/Jake/London/2.jpg" class="img-polaroid feed-photo" width="100" height="100" />
-              <img src="./img/albums/Jake/London/3.jpg" class="img-polaroid feed-photo" width="100" height="100" />
-              <img src="./img/albums/Jake/London/4.jpg" class="img-polaroid feed-photo" width="100" height="100" />
-              <img src="./img/albums/Jake/London/5.jpg" class="img-polaroid feed-photo" width="100" height="100" />
-          </div>
-
-          <div class="feed jumpup">
-              <h4>
-                <a href="https://www.facebook.com/gelu.campean">
-                  George Scott
-                </a> posted 7 new photos in the album 
-                <a href="https://www.facebook.com/media/set/?set=a.415017558559030.95291.100001523676777">
-                  Eurotrip
-                </a> 
-              </h4>
-              <img src="./img/albums/George/Eurotrip/1.jpg" class="img-polaroid feed-photo"  width="100" height="100" />
-              <img src="./img/albums/George/Eurotrip/2.jpg" class="img-polaroid feed-photo"  width="100" height="100" />
-              <img src="./img/albums/George/Eurotrip/3.jpg" class="img-polaroid feed-photo"  width="100" height="100" />
-              <img src="./img/albums/George/Eurotrip/4.jpg" class="img-polaroid feed-photo"  width="100" height="100" />
-              <img src="./img/albums/George/Eurotrip/5.jpg" class="img-polaroid feed-photo"  width="100" height="100" />
-              <img src="./img/albums/George/Eurotrip/6.jpg" class="img-polaroid feed-photo"  width="100" height="100" />
-              <img src="./img/albums/George/Eurotrip/7.jpg" class="img-polaroid feed-photo"  width="100" height="100" />
-          </div>
-
-                    <!-- FB INNER END -->
+              <div class="accordion" id="accordion2">
 
 
+                <div class="accordion-group">
+                  <div class="accordion-heading">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+                      <img src="./img/logo_facebook.png"  width="30" height="30" />  Facebook 
+                    </a>
+                  </div>
+                  <div id="collapseOne" class="accordion-body collapse in">
+                    <div class="accordion-inner">
 
+                      <!-- FB INNER STAR -->
+
+                      <div class="feed jumpup">
+                        <h4> 
+                          <a href="https://www.facebook.com/dani.bwr">
+                            Jake Bollen 
+                          </a>
+                          posted 5 new photos in the album 
+                          <a href="https://www.facebook.com/media/set/?set=a.124622230945504.24779.100001931840711">
+                            London & around
+                          </a>
+                        </h4>
+                        <img src="./img/albums/Jake/London/1.jpg" class="img-polaroid feed-photo"  width="100" height="100" />
+                        <img src="./img/albums/Jake/London/2.jpg" class="img-polaroid feed-photo" width="100" height="100" />
+                        <img src="./img/albums/Jake/London/3.jpg" class="img-polaroid feed-photo" width="100" height="100" />
+                        <img src="./img/albums/Jake/London/4.jpg" class="img-polaroid feed-photo" width="100" height="100" />
+                        <img src="./img/albums/Jake/London/5.jpg" class="img-polaroid feed-photo" width="100" height="100" />
+                      </div>
+
+                      <div class="feed jumpup">
+                        <h4>
+                          <a href="https://www.facebook.com/gelu.campean">
+                            George Scott
+                          </a> posted 7 new photos in the album 
+                          <a href="https://www.facebook.com/media/set/?set=a.415017558559030.95291.100001523676777">
+                            Eurotrip
+                          </a> 
+                        </h4>
+                        <img src="./img/albums/George/Eurotrip/1.jpg" class="img-polaroid feed-photo"  width="100" height="100" />
+                        <img src="./img/albums/George/Eurotrip/2.jpg" class="img-polaroid feed-photo"  width="100" height="100" />
+                        <img src="./img/albums/George/Eurotrip/3.jpg" class="img-polaroid feed-photo"  width="100" height="100" />
+                        <img src="./img/albums/George/Eurotrip/4.jpg" class="img-polaroid feed-photo"  width="100" height="100" />
+                        <img src="./img/albums/George/Eurotrip/5.jpg" class="img-polaroid feed-photo"  width="100" height="100" />
+                        <img src="./img/albums/George/Eurotrip/6.jpg" class="img-polaroid feed-photo"  width="100" height="100" />
+                        <img src="./img/albums/George/Eurotrip/7.jpg" class="img-polaroid feed-photo"  width="100" height="100" />
+                      </div>
+
+                      <!-- FB INNER END -->
+
+
+
+                    </div> <!--accordion inner-->
+                  </div> <!--Collapse ONE-->
+                </div> <!--Group -->
+
+
+                <div class="accordion-group">
+                  <div class="accordion-heading">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+                      <img src="./img/logo_twitter.png"  width="30" height="30" />  Twitter 
+                    </div>
+                    <div id="collapseTwo" class="accordion-body collapse">
+                      <div class="accordion-inner">
+                        <!-- TWITTER START --> 
+                        <div class="feed jumpup">
+                          <h4>
+                            <a href="https://twitter.com/BarackObama">
+                              @BarackObama
+                            </a> tweeted 5 new photo tweets 
+                            <a href="https://twitter.com/BarackObama/media/grid">
+                              [More]
+                            </a> 
+                          </h4>
+                          <img src="./img/albums/Obama/1.jpg" class="img-polaroid feed-photo"  width="100" height="100" />
+                          <img src="./img/albums/Obama/2.jpg" class="img-polaroid feed-photo"  width="100" height="100" />
+                          <img src="./img/albums/Obama/3.jpg" class="img-polaroid feed-photo"  width="100" height="100" />
+                          <img src="./img/albums/Obama/4.jpg" class="img-polaroid feed-photo"  width="100" height="100" />
+                          <img src="./img/albums/Obama/5.jpg" class="img-polaroid feed-photo"  width="100" height="100" />
+                        </div>
+
+                        <div class="feed jumpup">
+                          <h4>
+                            <a href="https://twitter.com/UofTNews">
+                              @UofTNews
+                            </a> tweeted 6 new photo tweets 
+                            <a href="https://twitter.com/UofTNews/media/grid">
+                              [More]
+                            </a> 
+                          </h4>
+                          <img src="./img/albums/UofT/1.jpg" class="img-polaroid feed-photo"  width="100" height="100" />
+                          <img src="./img/albums/UofT/2.jpg" class="img-polaroid feed-photo"  width="100" height="100" />
+                          <img src="./img/albums/UofT/3.jpg" class="img-polaroid feed-photo"  width="100" height="100" />
+                          <img src="./img/albums/UofT/4.jpg" class="img-polaroid feed-photo"  width="100" height="100" />
+                          <img src="./img/albums/UofT/5.jpg" class="img-polaroid feed-photo"  width="100" height="100" />
+                          <img src="./img/albums/UofT/6.jpg" class="img-polaroid feed-photo"  width="100" height="100" />
+                        </div>
+
+                   </div> <!--accordion inner-->
+                  </div> <!--Collapse ONE-->
+                </div> <!--Group -->
+
+                    <!-- TWITTER END --> 
+
+
+
+
+                    <div class="accordion-group">
+                      <div class="accordion-heading">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
+                          <img src="./img/logo_google.png"  width="30" height="30" />  Google Plus 
+                        </a>
+                      </div>
+
+                      <div id="collapseThree" class="accordion-body collapse">
+                        <div class="accordion-inner">
+                          <div class="feed jumpup">
+                            <h4>
+                              <a href="https://plus.google.com/103893288604082559806/">
+                                Ben Zuo
+                              </a> uploaed 6 new photos to his album 
+                              <a href="https://plus.google.com/photos/103893288604082559806/albums/5847636817322973569">
+                                CIAS 2013
+                              </a> 
+                            </h4>
+                            <img src="./img/albums/Ben/1.jpg" class="img-polaroid feed-photo"  width="100" height="100" />
+                            <img src="./img/albums/Ben/2.jpg" class="img-polaroid feed-photo"  width="100" height="100" />
+                            <img src="./img/albums/Ben/3.jpg" class="img-polaroid feed-photo"  width="100" height="100" />
+                            <img src="./img/albums/Ben/4.jpg" class="img-polaroid feed-photo"  width="100" height="100" />
+                            <img src="./img/albums/Ben/5.jpg" class="img-polaroid feed-photo"  width="100" height="100" />
+                            <img src="./img/albums/Ben/6.jpg" class="img-polaroid feed-photo"  width="100" height="100" />
+                          </div>
+
+                    </div> <!--accordion inner-->
+                  </div> <!--Collapse ONE-->
+                </div> <!--Group -->
+                    <!-- END twitter -->
+
+                  </div>
                 </div>
               </div>
+
+              <div class="tab-pane fade" id="browse"></div>
+
             </div>
-            
+          </div> 
+          <!-- Container End--> 
 
-            <div class="accordion-group">
-              <div class="accordion-heading">
-                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
-                  <img src="./img/logo_twitter.png"  width="30" height="30" />  Twitter 
-              </div>
-              <div id="collapseTwo" class="accordion-body collapse">
-              <div class="accordion-inner">
-                <!-- TWITTER START --> 
-                  <div class="feed jumpup">
-                      <h4>
-                        <a href="https://twitter.com/BarackObama">
-                          @BarackObama
-                        </a> tweeted 5 new photo tweets 
-                        <a href="https://twitter.com/BarackObama/media/grid">
-                          [More]
-                        </a> 
-                      </h4>
-                      <img src="./img/albums/Obama/1.jpg" class="img-polaroid feed-photo"  width="100" height="100" />
-                      <img src="./img/albums/Obama/2.jpg" class="img-polaroid feed-photo"  width="100" height="100" />
-                      <img src="./img/albums/Obama/3.jpg" class="img-polaroid feed-photo"  width="100" height="100" />
-                      <img src="./img/albums/Obama/4.jpg" class="img-polaroid feed-photo"  width="100" height="100" />
-                      <img src="./img/albums/Obama/5.jpg" class="img-polaroid feed-photo"  width="100" height="100" />
-                  </div>
-
-                  <div class="feed jumpup">
-                      <h4>
-                        <a href="https://twitter.com/UofTNews">
-                          @UofTNews
-                        </a> tweeted 6 new photo tweets 
-                        <a href="https://twitter.com/UofTNews/media/grid">
-                          [More]
-                        </a> 
-                      </h4>
-                      <img src="./img/albums/UofT/1.jpg" class="img-polaroid feed-photo"  width="100" height="100" />
-                      <img src="./img/albums/UofT/2.jpg" class="img-polaroid feed-photo"  width="100" height="100" />
-                      <img src="./img/albums/UofT/3.jpg" class="img-polaroid feed-photo"  width="100" height="100" />
-                      <img src="./img/albums/UofT/4.jpg" class="img-polaroid feed-photo"  width="100" height="100" />
-                      <img src="./img/albums/UofT/5.jpg" class="img-polaroid feed-photo"  width="100" height="100" />
-                      <img src="./img/albums/UofT/6.jpg" class="img-polaroid feed-photo"  width="100" height="100" />
-                  </div>
-                  
-                </div>
-              </div>
-
-            <!-- TWITTER END --> 
-
-           
-
-
-            <div class="accordion-group">
-              <div class="accordion-heading">
-                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
-                <img src="./img/logo_google.png"  width="30" height="30" />  Google Plus 
-                </a>
-              </div>
-
-              <div id="collapseThree" class="accordion-body collapse">
-                <div class="accordion-inner">
-                  <div class="feed jumpup">
-                    <h4>
-                      <a href="https://plus.google.com/103893288604082559806/">
-                        Ben Zuo
-                      </a> uploaed 6 new photos to his album 
-                      <a href="https://plus.google.com/photos/103893288604082559806/albums/5847636817322973569">
-                        CIAS 2013
-                      </a> 
-                    </h4>
-                    <img src="./img/albums/Ben/1.jpg" class="img-polaroid feed-photo"  width="100" height="100" />
-                    <img src="./img/albums/Ben/2.jpg" class="img-polaroid feed-photo"  width="100" height="100" />
-                    <img src="./img/albums/Ben/3.jpg" class="img-polaroid feed-photo"  width="100" height="100" />
-                    <img src="./img/albums/Ben/4.jpg" class="img-polaroid feed-photo"  width="100" height="100" />
-                    <img src="./img/albums/Ben/5.jpg" class="img-polaroid feed-photo"  width="100" height="100" />
-                    <img src="./img/albums/Ben/6.jpg" class="img-polaroid feed-photo"  width="100" height="100" />
-                  </div>
-                </div>
-              </div>
-
-
-            </div> 
-
-
+          <!-- Modals -->
+          <div id="settings" 
+          class="modal hide fade in" tabindex="-1" role="dialog" 
+          aria-labelledby="mySettingsLabel" aria-hidden="false">
+          <div class="modal-header">
+            <button class="close" aria-hidden="true" data-dismiss="modal" type="button">X</button>
+            <h3 id="myModalLabel">Account settings</h3>
           </div>
-
-
-
-
-        </div>
-      </div>
-
-      <div class="tab-pane fade" id="browse"></div>
-
-    </div>
-  </div> <!-- Container End--> 
-
-  <!-- Modals -->
-  <div id="settings" 
-  class="modal hide fade in" tabindex="-1" role="dialog" 
-  aria-labelledby="mySettingsLabel" aria-hidden="false">
-  <div class="modal-header">
-      <button class="close" aria-hidden="true" data-dismiss="modal" type="button">X</button>
-      <h3 id="myModalLabel">Account settings</h3>
-  </div>
-  <div class="modal-body"><div class="hero-unit"><div id="g-unit" class="hero-unit">
-      <div class="tabbable tabs-left">
-          <ul class="nav nav-tabs" id="accountSettingsTab">
-              <li class="active"><a data-toggle="tab" href="#settingsLogin"><h2>Login</h2></a></li>
-              <li class=""><a data-toggle="tab" href="#settingsNetworks"><h2>Networks</h2></a></li>
-              <li class=""><a data-toggle="tab" href="#settingsDownloads"><h2>Downloads</h2></a></li>
-          </ul>
-          <div class="tab-content">
-              <!--START -->
-              <div class="settingsLogin" class="tab-pane">
+          <div class="modal-body"><div class="hero-unit"><div id="g-unit" class="hero-unit">
+            <div class="tabbable tabs-left">
+              <ul class="nav nav-tabs" id="accountSettingsTab">
+                <li class="active"><a data-toggle="tab" href="#settingsLogin"><h2>Login</h2></a></li>
+                <li class=""><a data-toggle="tab" href="#settingsNetworks"><h2>Networks</h2></a></li>
+                <li class=""><a data-toggle="tab" href="#settingsDownloads"><h2>Downloads</h2></a></li>
+              </ul>
+              <div class="tab-content">
+                <!--START -->
+                <div class="settingsLogin" class="tab-pane">
                   hello
-              </div>
-              <div class="settingsNetworks" class="tab-pane">
+                </div>
+                <div class="settingsNetworks" class="tab-pane">
                   bye
-              </div>
-              <div class="settingsDownloads" class="tab-pane">
+                </div>
+                <div class="settingsDownloads" class="tab-pane">
 
-              </div>    
-          </div>  
-      </div>
-  </div></div></div>
-  <div class="modal-footer">
-      <button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
-      <button id="sendPassword" class="btn btn-primary">Confirm</button>
-  </div>
-  </div>
-</body>
-</html>
+                </div>    
+              </div>  
+            </div>
+          </div></div></div>
+          <div class="modal-footer">
+            <button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
+            <button id="sendPassword" class="btn btn-primary">Confirm</button>
+          </div>
+        </div>
+      </body>
+      </html>
