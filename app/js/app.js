@@ -16,7 +16,7 @@ $(document).ready(function() {
 
 	var selected = false;
 	
-	$(".img-polaroid").hover( 
+	$(".img").hover( 
 
 		function(){
 		if (!selected) {
@@ -33,10 +33,10 @@ $(document).ready(function() {
 		}
 	);
 
-	$(".img-polaroid").click(function() {
+	$(".user-photo").click(function() {
 		console.log(selected);
 		if (selected) {
-			$(".img-polaroid").css("width", "100"); $(".img-polaroid").css("height", "100");
+			$(".img ").css("width", "100"); $(".img ").css("height", "100");
 			$('#password_field').hide(); $('#username_field').hide();
 			$('button#login_button').hide(); $('#forgot').hide();
 			selected = false;

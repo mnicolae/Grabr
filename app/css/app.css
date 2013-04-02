@@ -18,6 +18,7 @@ text-align: center;
 
 }
 
+
 .add_new_user_area{
 	text-align: right;
 }
@@ -47,6 +48,12 @@ text-align: center;
    .roundabout-in-focus {
       cursor: auto;
    }
+
+/*Checkbox stuff*/
+
+.photo_container { position: relative; width: 100px; height: 100px; display: inline-block}
+.checkbox { position: absolute; bottom: 0px; right: 0px; }
+
 #username_field {
 	margin-top: 10px;
 	display: none;
