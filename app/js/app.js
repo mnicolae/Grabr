@@ -11,6 +11,7 @@ $(document).ready(function() {
 	});
 
 	$(".dropdown-toggle").dropdown();
+	$("#status").popover();
 	
 	$('.jumpup').addClass('animated bounceInDown');
 

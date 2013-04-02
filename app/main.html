@@ -16,12 +16,12 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/bootstrap-responsive.css">
 
-
-    
     <!-- User-defined JS / CSS -->
     <script src="./js/app.js" type="text/javascript"></script>
     <link rel="stylesheet" href="./css/app.css">
     <link rel="stylesheet" href="./css/animate.css">
+
+
 
 
   </head>
@@ -39,11 +39,9 @@
               <input type="text" class="span2 search-query" placeholder="Search">
             </form>
           </li>
-          <li class="dropdown">
-            <a data-toggle="dropdown" class="dropdown-toggle" href="#">Status<b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Download all</a></li>
-            </ul>
+          <li>
+                <a id="status" data-content="Waiting for user action..." title="" data-toggle="popover" href="#" data-original-title="Status" data-placement="bottom">Status</a>
+
           </li>
           <li class="dropdown">
             <a data-toggle="dropdown" class="dropdown-toggle" href="#">Download<b class="caret"></b></a>
@@ -265,7 +263,7 @@
 
                       <div id="collapseThree" class="accordion-body collapse">
                         <div class="accordion-inner">
-                          <div class="feed jumpup">
+                        <div class="feed jumpup">
                             <h4>
                               <a href="https://plus.google.com/103893288604082559806/">
                                 Ben Zuo
@@ -298,20 +296,24 @@
                         <img src="./img/albums/Ben/6.jpg" class="feed-photo"  style="height: 100%;" />
                             <input type="checkbox"  class="checkbox" id="check2" />
                         </div>
-                          </div>
+                      </div>
 
                     </div> <!--accordion inner-->
                   </div> <!--Collapse ONE-->
                 </div> <!--Group -->
                     <!-- END twitter -->
 
-                  </div>
-                </div>
-              </div>
+                  </div><!--Close accordion-->
+                </div><!--Close hero-->
+              </div> <!--Close Tab MAIN-->
 
-              <div class="tab-pane fade" id="browse"></div>
 
-            </div>
+
+               <div class="tab-pane fade" id="browse"></div>
+
+
+
+            
           </div> 
           <!-- Container End--> 
 
