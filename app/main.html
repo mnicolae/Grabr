@@ -55,10 +55,11 @@
                   <a data-toggle="dropdown" class="dropdown-toggle" href="#">My Account<b class="caret"></b></a>
                 <ul class="dropdown-menu">
                     <li>
-                        <a href="#settings" onclick="$('#settings').modal({backdrop: false})">Account settings</a></li>
-                        </div>
+                        <a href="#settings" onclick="$('#settings').modal({backdrop: false})">Account settings</a>
                       </li>
-                    <li><a href="./index.html">Log out</a></li>
+                    <li>
+                        <a href="./index.html">Log out</a>
+                    </li>
                 </ul>
               </li>
 
@@ -82,7 +83,7 @@
             <div class="accordion-group">
               <div class="accordion-heading">
                 <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
-                  <img src="./img/logo_facebook.png"  width="30" height="30" />  Facebook
+                  Facebook
                 </a>
               </div>
               <div id="collapseOne" class="accordion-body collapse in">
@@ -137,46 +138,12 @@
             <div class="accordion-group">
               <div class="accordion-heading">
                 <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
-                  <img src="./img/logo_twitter.png"  width="30" height="30" />  Twitter
+                  Twitter
                 </a>
               </div>
               <div id="collapseTwo" class="accordion-body collapse">
                 <div class="accordion-inner">
-                  <!-- TWITTER START --> 
-           <div class="feed jumpup">
-              <h4>
-                <a href="https://twitter.com/BarackObama">
-                  @BarackObama
-                </a> tweeted 5 new photo tweets 
-                <a href="https://twitter.com/BarackObama/media/grid">
-                  [More]
-                </a> 
-              </h4>
-              <img src="./img/albums/Obama/1.jpg" class="img-polaroid feed-photo"  width="100" height="100" />
-              <img src="./img/albums/Obama/2.jpg" class="img-polaroid feed-photo"  width="100" height="100" />
-              <img src="./img/albums/Obama/3.jpg" class="img-polaroid feed-photo"  width="100" height="100" />
-              <img src="./img/albums/Obama/4.jpg" class="img-polaroid feed-photo"  width="100" height="100" />
-              <img src="./img/albums/Obama/5.jpg" class="img-polaroid feed-photo"  width="100" height="100" />
-          </div>
-
-
-                     <div class="feed jumpup">
-              <h4>
-                <a href="https://twitter.com/UofTNews">
-                  @UofTNews
-                </a> tweeted 6 new photo tweets 
-                <a href="https://twitter.com/UofTNews/media/grid">
-                  [More]
-                </a> 
-              </h4>
-              <img src="./img/albums/UofT/1.jpg" class="img-polaroid feed-photo"  width="100" height="100" />
-              <img src="./img/albums/UofT/2.jpg" class="img-polaroid feed-photo"  width="100" height="100" />
-              <img src="./img/albums/UofT/3.jpg" class="img-polaroid feed-photo"  width="100" height="100" />
-              <img src="./img/albums/UofT/4.jpg" class="img-polaroid feed-photo"  width="100" height="100" />
-              <img src="./img/albums/UofT/5.jpg" class="img-polaroid feed-photo"  width="100" height="100" />
-              <img src="./img/albums/UofT/6.jpg" class="img-polaroid feed-photo"  width="100" height="100" />
-          </div>
-                  <!-- TWITTER END -->
+                  Tweetss
                 </div>
               </div>
             </div>
@@ -187,7 +154,7 @@
                        <div class="accordion-group">
               <div class="accordion-heading">
                 <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
-                  <img src="./img/logo_google.png"  width="30" height="30" />  Google Plus
+                  Google Plus
                 </a>
               </div>
               <div id="collapseThree" class="accordion-body collapse">
@@ -222,19 +189,22 @@
   <div class="modal-body">
       <div class="tabbable tabs-left">
           <ul class="nav nav-tabs">
-              <li class=""><a data-toggle="tab" href="#STEEL"><h2>Login</h2></a></li>
-              <li class=""><a data-toggle="tab" href="#FIBERGLASS"><h2>Networks</h2></a></li>
-              <li class=""><a data-toggle="tab" href="#LOCKS"><h2>Downloads</h2></a></li>
+              <li class=""><a data-toggle="tab" href="#settingsLogin"><h2>Login</h2></a></li>
+              <li class=""><a data-toggle="tab" href="#settingsNetworks"><h2>Networks</h2></a></li>
+              <li class=""><a data-toggle="tab" href="#settingsDownloads"><h2>Downloads</h2></a></li>
           </ul>
       <div class="tab-content">
           <!--START -->
-          <!-- END -->
+          <div id="settingsLogin"
+      </div>
+              </ul>
+          </div>  
       </div>
   </div>
   <div class="modal-footer">
       <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
       <button id="sendPassword" class="btn btn-primary">Send password</button>
   </div>
-  
+
 </body>
 </html>
