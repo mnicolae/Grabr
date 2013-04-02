@@ -56,19 +56,6 @@
                 <ul class="dropdown-menu">
                     <li>
                         <a href="#settings" onclick="$('#settings').modal({backdrop: false})">Account settings</a></li>
-                        <div id="settings" 
-                        class="modal hide fade in" tabindex="-1" role="dialog" 
-                        aria-labelledby="mySettingsLabel" aria-hidden="false">
-                            <div class="modal-header">
-                                <button class="close" aria-hidden="true" data-dismiss="modal" type="button">X</button>
-                                <h3 id="myModalLabel">Account settings</h3>
-                            </div>
-                            <div class="modal-body">
-                            </div>
-                            <div class="modal-footer">
-                                <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
-                                <button id="sendPassword" class="btn btn-primary">Send password</button>
-                            </div>
                         </div>
                       </li>
                     <li><a href="./index.html">Log out</a></li>
@@ -190,7 +177,30 @@
     </div>
   </div> <!-- Container End--> 
 
-
+  <!-- Modals -->
+  <div id="settings" 
+  class="modal hide fade in" tabindex="-1" role="dialog" 
+  aria-labelledby="mySettingsLabel" aria-hidden="false">
+  <div class="modal-header">
+      <button class="close" aria-hidden="true" data-dismiss="modal" type="button">X</button>
+      <h3 id="myModalLabel">Account settings</h3>
+  </div>
+  <div class="modal-body">
+      <div class="tabbable tabs-left">
+          <ul class="nav nav-tabs">
+              <li class=""><a data-toggle="tab" href="#STEEL"><h2>Login</h2></a></li>
+              <li class=""><a data-toggle="tab" href="#FIBERGLASS"><h2>Networks</h2></a></li>
+              <li class=""><a data-toggle="tab" href="#LOCKS"><h2>Downloads</h2></a></li>
+          </ul>
+      <div class="tab-content">
+          <!--START -->
+          <!-- END -->
+      </div>
+  </div>
+  <div class="modal-footer">
+      <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+      <button id="sendPassword" class="btn btn-primary">Send password</button>
+  </div>
   
 </body>
 </html>
