@@ -102,4 +102,24 @@ $(document).ready(function() {
 			
 	});
 
+
+// Checkbox stuff
+	var pop = false;
+	var downloads = [];
+	$(".checkbox").click(function() {
+		var pic = $(this).prev().attr("src")
+		if (!pop){
+		$("#status").popover("show");
+		$(".popover-content").html('<img class="status-image" src=' + pic + '/>');
+		pop = true;
+		}else{
+			$(".popover-content").append('<img class="status-image" src=' + pic + '/>');
+
+
+
+		}
+
+	});
+
+
 });
