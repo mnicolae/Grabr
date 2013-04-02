@@ -1,5 +1,10 @@
 $(document).ready(function() {
 
+	$('#accountSettingsTab a').click(function (e) {
+    	e.preventDefault();
+    	$(this).tab('show');
+    });
+
 	$("#sendPassword").click(function() {
 		$("#modalBodyContent").hide();
 		$(".modal-body").text("A password has been sent to your email.");
