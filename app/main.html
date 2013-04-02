@@ -54,7 +54,24 @@
               <li class="dropdown">
                   <a data-toggle="dropdown" class="dropdown-toggle" href="#">My Account<b class="caret"></b></a>
                 <ul class="dropdown-menu">
-                  <li><a href="./index.html">Log out</a></li>
+                    <li>
+                        <a href="#settings" onclick="$('#settings').modal({backdrop: false})">Account settings</a></li>
+                        <div id="settings" 
+                        class="modal hide fade in" tabindex="-1" role="dialog" 
+                        aria-labelledby="mySettingsLabel" aria-hidden="false">
+                            <div class="modal-header">
+                                <button class="close" aria-hidden="true" data-dismiss="modal" type="button">X</button>
+                                <h3 id="myModalLabel">Account settings</h3>
+                            </div>
+                            <div class="modal-body">
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+                                <button id="sendPassword" class="btn btn-primary">Send password</button>
+                            </div>
+                        </div>
+                      </li>
+                    <li><a href="./index.html">Log out</a></li>
                 </ul>
               </li>
 
